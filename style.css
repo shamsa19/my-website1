@@ -1,0 +1,216 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #252A34;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+  padding: 10px;
+  padding-bottom: 50rem;
+
+}
+
+#puzzle-container {
+  color: #ffffff; 
+  max-width: 600px;
+  margin: 20px auto;
+  padding-bottom: 40px;
+  background-color: #252A34; 
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid #DE1749; 
+  z-index: 10;
+
+}
+
+h2 { 
+  padding-top: 200px; 
+  font-size: 2.5em;
+  color: #ffffff; 
+  z-index: 20;
+}
+
+h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #ffffff; 
+  z-index: 20;
+}
+
+p {
+  color: #fff;
+  font-style: italic;
+  z-index: 20;
+}
+
+input[type="text"] {
+  font-size: 20px;
+  width: 50px;
+  padding: 12px 20px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 12px;
+  border: 2px solid #DE1749; 
+  background-color: #333333; 
+  color: #ffffff; 
+  z-index: 20;
+}
+
+button {
+  background: #DE1749;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  transition: background 0.3s;
+  z-index: 20;
+}
+
+button:hover {
+  background: #860f2d;
+}
+
+#message {
+  font-size: 1.5em;
+  color: #ffff; 
+  margin-top: 20px;
+  z-index: 20;
+}
+
+#puzzle-clue {
+  font-size: 1.2em;
+  color: #ff9900; 
+  margin-top: 20px;
+  font-weight: bold;
+  z-index: 20;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #7c0e2a;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #DE1749;
+  opacity: 0.8;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+.game-container {
+  max-width: 800px;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 412px) and (max-height: 915px) {
+  body {
+    padding: 5px 20px 200px 1px;
+    background: #252A34;
+    overflow: hidden;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  #puzzle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #252A34;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 70%; /* Adjust container width for better fit */
+    
+   
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #letter-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  #submit-letter {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #DE1749;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #submit-letter:hover {
+    background-color: #DE1749;
+  }
+
+  #message {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  #puzzle-clue {
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #next-step {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #DE1749;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #next-step:hover {
+    background-color: #DE1749;
+  }
+
+  .game-container .option {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
+  }
+}
