@@ -1,5 +1,5 @@
 // Game Show Puzzle Logic
-const correctLetter = "69";  // The letter to guess (could be a fun, meaningful one like "B" for "Birthday")
+const correctLetter = "2631";  // The letter to guess (could be a fun, meaningful one like "B" for "Birthday")
 const submitButton = document.getElementById("submit-letter");
 const inputField = document.getElementById("letter-input");
 const message = document.getElementById("message");
