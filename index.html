@@ -9,17 +9,21 @@
 <body>
 
   <!-- Game Show Section -->
-  <h2>You wanted a Game Show,<br> here's one made just for you!</h2>
-  <p>Stole your codyle design sorry not sorry lol</p>
 
-  <div id="puzzle-container">
-    <h3>Step 1: Guess the number to reveal the secret message!</h3>
-    <input type="text" id="letter-input" maxlength="4" placeholder="Enter four numbers">
-    <button id="submit-letter">Submit</button>
-    <p id="message" style="display: none;">Congratulations, Entrepreneur! Ready for the challenge?</p>
-    <div id="puzzle-clue" style="display: none;"> Your usual passcode ;)</div>
-    <button id="next-step" style="display: none;" onclick="location.href='clue2.html'"> Next</button>
-</div>
+
+  <div class="game-container">
+    <div class="input">
+      <h2>You wanted a Game Show,<br> here's one made just for you!</h2>
+      <p>Stole your codyle design sorry not sorry lol</p>
+      <h3>Step 1: Guess the number to reveal the secret message!</h3>
+      <input type="text" id="letter-input" maxlength="4" placeholder="Enter four numbers">
+      <button id="submit-letter">Submit</button>
+      <p id="message" style="display: none;">Congratulations, Entrepreneur! Ready for the challenge?</p>
+      <div id="puzzle-clue" style="display: none;"> Your usual passcode ;)</div>
+      <button id="next-step" style="display: none;" onclick="location.href='clue2.html'"> Next</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
